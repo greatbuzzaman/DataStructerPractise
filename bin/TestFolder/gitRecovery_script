@@ -1,6 +1,0 @@
-#!/bin/bash
-A=0
-while IFS= read -r LINE ; do
-   $LINE > newfile$A.java
-  (( A++ ))
-done < "file"
