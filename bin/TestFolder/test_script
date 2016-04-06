@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#for x in $(<file); do echo "$x" > text$((++i)).txt; done
+unset i
+while read line           
+do           
+   # echo "file lines : $line"  
+   $line > text$((++i)).java          
+done <file 
+
+
